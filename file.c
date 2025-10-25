@@ -10,7 +10,7 @@ void saveContactsToFile(AddressBook *addressBook)
         printf("Erorr.\n");
         return;
     }
-    fprintf(fptr, "Total Contacts: %d\n", addressBook->contactCount);
+    fprintf(fptr, "%d\n", addressBook->contactCount);
     fprintf(fptr,"Name,Phone,Email\n");
     for(int i=0;i < addressBook->contactCount;i++)
     {
@@ -20,7 +20,7 @@ void saveContactsToFile(AddressBook *addressBook)
             addressBook->contacts[i].email);
     }
     fclose(fptr);
-    printf("Contacts saved successfully");
+    printf("Contacts saved successfully\n");
 }
 
 void loadContactsFromFile(AddressBook *addressBook)
@@ -42,3 +42,4 @@ void loadContactsFromFile(AddressBook *addressBook)
     fclose(fptr);
     printf("Contacts loaded successfully.\n");
 }
+
