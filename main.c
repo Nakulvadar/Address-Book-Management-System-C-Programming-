@@ -1,8 +1,6 @@
 /*
 Name: Nakul Anil Vadar
-Project Name: Address Book
-Batch ID: 25021_325
-Submision date: 17/9/2025
+Project: Address Book Management System
 
 Description:
 This project implements a simple AddressBook that allows users to:
@@ -93,3 +91,4 @@ int main()
 
     return 0;
 }
+
